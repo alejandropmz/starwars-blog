@@ -1,0 +1,26 @@
+La función del index es cargar el layout
+
+React Router actúa en el layout, el cual es el que se conecta al componente index para mostrar
+la aplicación.
+
+Layout es donde se carga el contenido de la aplicación, es decir donde se colocan los componentes
+
+El layout por su parte es el primer elemento del Router el cual se usa para la creación de páginas
+SPA (single page application) las cuales muestran todo su contenido en una sola página, la cual
+elimina la necesidad de cargar todo el contenido cuando se quiere pasar a otra sección de la
+aplicación. El tema con esto es que se simplifica haciendo que se puedan mirar varias vistas,
+lo cual optimiza el uso de la aplicación, al (por ejemplo) minimizar el uso de recursos de la
+computadora del cliente.
+
+El Route por su cuenta se encarga de que cuando se le haga click a un enlace actualizar todo 
+el DOM con el contenido a la ruta la cual queremos acceder, cambiando incluso la ruta del enlace.
+Básicamente React Router lo que hace es que una página la cual tiene todo el contenido dentro de
+ella de la impresión de que son distintas, aunque sea la misma. 
+
+theid se puede decir que es un parametro el cual se le puede pasar información para que luego la procece. Gracias a este se pueden crear direcciones como por ej: pagina/ruta/1, pagina/ruta/2 y así sucesivamente. Para poder usarlo dentro del componente se hace uso del hook useParams.
+
+<link to="/"> es el elemento que se va a usar en reemplazo de <a>, ya que evita que se recargue la página como naturalmente se hace en HTML. El href se reemplaza por su parte por to="ruta".
+
+Tener en cuenta que la razón por la cual tanto el <navbar> como el <footer> están fuera de las <Routes> es porque son constantes las cuales no cambian durante el uso de la aplicación.
+
+

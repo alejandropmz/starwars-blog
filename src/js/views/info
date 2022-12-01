@@ -1,0 +1,18 @@
+Aunque las views (páginas) puedan parecerse a los componentes, su función discrepa un poco de 
+estos ya que podría decirse que mientras la función de los componentes es reutilizar cierto
+código. La función de las views sería dar una vista de la aplicación, la cual también 
+tiene una ruta dentro de esta. Esta también se encarga de montar la parte 
+visual de la aplicación al llamar a los demás componentes.
+
+Digamos que la views (páginas) es donde se arman todas las piezas, mientas que el componente
+es el conjunto de piezas como tal. 
+
+Digamos que los componenetes son elementos reutilizables, mientras que las views es el sitio
+donde podemos dar vista a nuestra aplicación y reutilizar estos componentes en los lugares
+que se necesite.
+
+Es un tema también de saber utilizarlos y mezclarlos. Un ejemplo de esto sería:
+
+* navbar es un componente ya que se usa en varías páginas (views). Cómo también lo sería
+por ejemplo un footer. Vemos que la views es "la mesa" para armar nuesta aplicación,
+mientras que los componenetes serían las "piezas" que componen la aplicación.

@@ -6,7 +6,7 @@ import {createRoot} from 'react-dom/client'
 import "../styles/index.css";
 
 //import your own components
-import Layout from './layout.js'
+import Layout from './layout.jsx' //<-- carga el
 
 //
 const root = createRoot(document.querySelector("#app"))
@@ -14,3 +14,5 @@ const root = createRoot(document.querySelector("#app"))
 //render your react application
 root.render(<Layout/>)
 
+
+// La función del index es cargar el layout
