@@ -24,3 +24,36 @@ theid se puede decir que es un parametro el cual se le puede pasar información 
 Tener en cuenta que la razón por la cual tanto el <navbar> como el <footer> están fuera de las <Routes> es porque son constantes las cuales no cambian durante el uso de la aplicación.
 
 
+***************************
+
+El flux nos ayuda a compartir información entre distintos componentes, esto debido que si lo hacemos de manera tradicional con componentes, props y teniendo en cuanta que los componentes se comportan de una manera respecto a sus componentes padres hace muy fácil el hecho que luego se nos presente un enredo y posteriormente errores en el código, cuando son proyectos de gran tamaño. Por lo que entonces mediante el flux lo que hacemos es centralizar estas acciones de manera global, lo que haga que la información sea compartida de forma centralizada.
+
+VENTAJAS DE FLUX:
+
+1. Al estar los datos centralizados entonces no hay necesidad de hacer un llamado a otro componente para generar algún tipo de acción, si no que entonces se le hace un llamado a las acciones de flux, evitando algún renderizado de otro componente en la página.
+
+2. Hace fácil el acceso a la información ya que no importa si esta viene dentro de la base de datos o si la ingresa un usuario, de igual manera el acceso a ella es el mimso.
+
+3. Separa y diferencia los componentes de las vistas (views) y componentes (components), estos últimos los cuales son reutilizables para otras aplicaciones. Es decir que separa la parte visual de la data o información que se maneja, ya que este último se maneja directamente desde el flux.
+
+Tener en cuenta que que el flux se divide por 3 capas:
+
+1. Los componentes: Son los componentes que llamen a cualquier acción flux, estos son llamados views. La diferencia con los componets es que estos últimos hacen llamados entre sí sin flux.
+
+2. Las acciones: Son similares a los setters ya que son las encargadas de manejar y actualizar toda la información del store. La ventaja es que se puede hacer grandes operaciones lógicas como: hacer un fetch, algún calculo, procesar algún dato etc. Estas acciones puedes ser activadas por distintos medios ej, cuando el cliente interactúa con la aplicación (algún click, alguna presión a algún botón etc) o por el sistema, por ejemplo después de algún guardado automático. Además de ser el primer paso en el flujo de trabajo del flux, y se envían al store.
+
+3. El store: Es el cual guarda toda la data que se le pasa a la aplicación. Al igual que los estados, el store es inmutable para react tenga control del proceso de actualización de la información.
+
+
+appContext: Se puede decir que es un envoltorio donde se comparte el State, que es lo que está definido en el flux (actions, store). Dicho de otra forma, lo que está en el appContext tiene disponible lo que está en el store.
+
+storeWrapper: Genera la funcionalidad antes explicada en appContext.
+
+injectContext: Se le llama así a la función la cual inserta el componente que se desee dentro de ese wrap (envoltorio), tal cual como se usa una función pasando parametros dentro de ella. Un ejemplo de eso es ver como en el layout se exporta el mismo layout dentro de la función wraper, injectContext. Es decir se exporta el layaout pero dentro de la funcionalidad de injectContext, añadiendolo así dentro del envoltorio.
+La ventaja de este es que ya los componentes que se encuentren dentro del layout (incluyendo también al layout) se puede hacer el llamado a ese contexto (mediante el hook context) para realizar actions a los elementos del store. Por ejemplo al component planet.
+
+Es decir que si se pasa información a traves del flux a los componentes, en la herramienta de react se verifica que la info pasada está tanto en flux, como en el context del component que se está pasando. Se nota que la información de cierta manera está centralizada y se puede manejar entre los distintos elementos de manera sencilla. Por lo que si un elemento se edita dentro del flux, presenta también cambios en donde esté importado el context.
+
+Dentro de las actions la función es generar funcionalidad a la data que se trae al store.
+
+repito, la ventaja de esto es que toda la lógica que se le aplica a la aplicación se centraliza en el archivo flux mediante el store y actions. Lógica la cual posteriormente se puede aplicar también a otros componentes donde se importe el useContext

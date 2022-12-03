@@ -11,6 +11,7 @@ import { Starships } from "./views/starships.jsx";
 import { Vehicles } from "./views/vehicles.jsx";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+import { PlanetsDetail } from "./views/planetsDetail.jsx";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -31,11 +32,12 @@ const Layout = () => {
             <Route path="/films" element={<Films />} />
             <Route path="/people" element={<People />} />
             <Route path="/planets" element={<Planets />} />
+            <Route path="/planets/:planetid" element={<PlanetsDetail />} />
             <Route path="/species" element={<Species />} />
             <Route path="/starships" element={<Starships />} />
             <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/single/:theid" element={<Single />} />
-            <Route path="*" element={<h1>Not found!</h1>} />
+            <Route path="*" element={<h1>Page in progress please calm down</h1>} />
           </Routes>
           <Footer />
         </ScrollToTop>

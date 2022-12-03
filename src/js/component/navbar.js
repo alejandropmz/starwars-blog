@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-    <img src="https://img.icons8.com/ios/50/000000/star-wars.png"></img>
+    <Link to="/"><img src="https://img.icons8.com/ios/50/000000/star-wars.png"></img></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
