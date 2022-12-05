@@ -11,7 +11,9 @@ import "../../styles/demo.css";
 export const Films = () => {
   const { store, actions } = useContext(Context); //Al traer en el store del flux la información, la podemos usar en cualquier componente que importemos el context
 
-  useEffect(()=> actions.getAllElements("films"),[])
+  useEffect(()=>{ 
+  actions.getAllElements("films");
+  },[])
 
   return (
     <div className="container">

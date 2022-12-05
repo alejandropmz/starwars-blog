@@ -6,11 +6,12 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
 import { EditableCards } from "../component/editableCards";
+import { Pagination } from "../component/pagination";
 
 export const Planets = () => {
   const { store, actions } = useContext(Context); //Al traer en el store del flux la información, la podemos usar en cualquier componente que importemos el context
 
-  useEffect(()=> actions.getAllElements("planets"),[])
+  useEffect(()=> {actions.getAllElements("planets")},[])
   
 
   return (
@@ -30,9 +31,16 @@ export const Planets = () => {
             </div>
           ))}
         </div>
+        <div className="row">
+          <div className="col">
+            <Pagination 
+              pages = {6}
+              currentPage = {1}
+              type = "planets"
+            />
+          </div>
+        </div>
       </div>
-      {/* a este boton se le pasa el evento onClick el cual acciona la función del flux llamada getPlanets */}
-
     </div>
   );
 };

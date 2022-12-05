@@ -9,7 +9,7 @@ import { EditableCards } from "../component/editableCards";
 export const Vehicles = () => {
 	const { store, actions } = useContext(Context);
 
-	useEffect(()=> actions.getAllElements("vehicles"),[])
+	useEffect(()=> {actions.getAllElements("vehicles")},[])
 
 	return (
 		<div className="container">

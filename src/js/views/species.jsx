@@ -9,7 +9,7 @@ import { EditableCards } from "../component/editableCards";
 export const Species = () => {
 	const { store, actions } = useContext(Context);
 
-	useEffect(()=> actions.getAllElements("species"),[])
+	useEffect(()=> {actions.getAllElements("species")},[])
 
 	return (
 		<div className="container">
