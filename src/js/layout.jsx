@@ -12,6 +12,8 @@ import { Vehicles } from "./views/vehicles.jsx";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { PlanetsDetail } from "./views/planetsDetail.jsx";
+import { LogPage } from "./views/logInpage.jsx";
+import { Interactive } from "./views/interactive.jsx";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -37,6 +39,8 @@ const Layout = () => {
             <Route path="/starships" element={<Starships />} />
             <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/single/:theid" element={<Single />} />
+            <Route path="/logInpage" element={<LogPage />} />
+            <Route path="/interactive" element={<Interactive />} />
             <Route path="*" element={<h1>Page in progress please calm down</h1>} />
           </Routes>
           <Footer />

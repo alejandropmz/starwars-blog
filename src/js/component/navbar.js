@@ -13,8 +13,8 @@ export const Navbar = () => {
   ])
 
   const [menu, setMenu] = useState([
-    {menu:"Log in / Sign up", url:"*"},
-    {menu:"Interactive", url:"*"},
+    {menu:"Log in / Sign up", url:"/logInpage"},
+    {menu:"Interactive", url:"/interactive"},
     {menu:"Blog", url:"*"}
   ])
 
@@ -42,7 +42,7 @@ export const Navbar = () => {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             {menu.map((menu,index)=>(
               <li key={index}>
-                <Link className="dropdown-item" to={menu.links}>{menu.menu}</Link>
+                <Link className="dropdown-item" to={menu.url}>{menu.menu}</Link>
               </li>
             ))}
           </ul>

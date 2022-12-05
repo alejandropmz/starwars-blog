@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext";
+import { useSearchParams } from "react-router-dom";
 
 
 import "../../styles/demo.css";
@@ -12,11 +13,11 @@ export const Planets = () => {
   const { store, actions } = useContext(Context); //Al traer en el store del flux la información, la podemos usar en cualquier componente que importemos el context
 
   useEffect(()=> {actions.getAllElements("planets")},[])
-  
+    let [searchParams, setSearchParams] = useSearchParams();
 
   return (
     <div className="container">
-      <h1>Planets</h1>
+      <h1>Planets {JSON.stringify(searchParams.get("page"))} </h1> {/* no me está funcionando de manera correcta */}
       <div className="container">
         <div className="row">
           {store.planets.map((planet)=>(

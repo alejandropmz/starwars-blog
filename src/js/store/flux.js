@@ -12,7 +12,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
       getAllElements: async (resource, pagination = {}) => {
 
-        let param = ""
+        let param = "" //Se crea el string vacío para posteriormente llenarlo con la info que deseemos
         if (!!pagination.page){ //si me piden una página en ESPECÍFICO (!!)
           param = `?page=${pagination.page}&limit=${pagination.limit||10}` // Se concatena entonces la página en específico que se está evaluando y el límite de esa misma página, si por alguna razón no tiene limite entones se coloca 10 por defecto.
         }
@@ -23,9 +23,11 @@ const getState = ({ getStore, getActions, setStore }) => {
           console.error(reply.status+": "+reply.statusText)
           return
         }
-        let data = await reply.json()
-        let newStore = {...getStore()}
+        let data = await reply.json() // espera que se convierta la respuesta en un objeto javascript
+        let newStore = {...getStore()} // deconstrúye el store y lo guarda en una nueva variable
         newStore[resource] = data.result || data.results //esto es lo mismo que hacer store.planets (por ejemplo), pero al hacerlo así se puede mapear los valores e ir pasando cada componente en el parametro resource
+        // toda la info de getStore se suplanta con la data de cada elemento (los cuales se están pasando por el parametro resouce), ej, planets, starships etc
+        // 
         setStore(newStore)
       }
 		} //acción es lo que se hace con esa data

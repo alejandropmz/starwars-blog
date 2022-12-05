@@ -5,11 +5,14 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
 import { EditableCards } from "../component/editableCards";
+import { Pagination } from "../component/pagination";
 
 export const People = () => {
   const { store, actions } = useContext(Context);
 
-  useEffect(() => {actions.getAllElements("people")}, []);
+  useEffect(() => {
+    actions.getAllElements("people");
+  }, []);
 
   return (
     <div className="container">
@@ -18,17 +21,22 @@ export const People = () => {
         <div className="row">
           {store.people.map((person, index) => (
             <div className="col col-md-4">
-				<EditableCards 
-				  id = {person.uid}
-				  type = "people"
-				  title = {person.name}
-				  text = ""
-				  img = {`https://starwars-visualguide.com/assets/img/characters/${person.uid}.jpg`}
-				/>
-			</div>
+              <EditableCards
+                id={person.uid}
+                type="people"
+                title={person.name}
+                text=""
+                img={`https://starwars-visualguide.com/assets/img/characters/${person.uid}.jpg`}
+              />
+            </div>
           ))}
         </div>
       </div>
+      <Pagination 
+        pages={9} 
+        currentPage={1} 
+        type="people" 
+        />
     </div>
   );
 };

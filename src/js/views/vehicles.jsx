@@ -5,6 +5,7 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
 import { EditableCards } from "../component/editableCards";
+import { Pagination } from "../component/pagination";
 
 export const Vehicles = () => {
 	const { store, actions } = useContext(Context);
@@ -29,6 +30,15 @@ export const Vehicles = () => {
         ))}
         </div>
       </div>
+      <div className="row">
+          <div className="col">
+            <Pagination 
+              pages = {4}
+              currentPage = {1}
+              type = "vehicles"
+            />
+          </div>
+        </div>
 		</div>
 
 	);
