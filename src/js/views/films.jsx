@@ -26,7 +26,8 @@ export const Films = () => {
             id = {film.uid}
             type  = "films"
             title = {film.properties.title}
-            text = {film.description}
+            text = {film.properties.director}
+            text2 = {film.properties.producer}
             img = {`https://starwars-visualguide.com/assets/img/films/${film.uid}.jpg`}
             />
           </div>

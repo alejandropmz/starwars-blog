@@ -10,11 +10,12 @@ import { TopBar } from "../component/topbar";
 import "../../styles/demo.css";
 import { MiddleInfo } from "../component/middleinfo";
 import { MixCards } from "../component/mixcards";
+import '../../styles/index.css'
 
 export const Interactive = () => {
 
   return (
-    <div className="container">
+    <div className="interactive-container">
       <Carousel 
         img1 = "https://lumiere-a.akamaihd.net/v1/images/sw-lego-new-swcom-slide-desktop-_2_5f19744d.jpeg?region=0,0,2048,870&width=1920"
         img2 = "https://lumiere-a.akamaihd.net/v1/images/sw-tales-from-galaxy-s-edge-enhanced-new-swcom-slide-de_9779cc92.jpeg?region=0,0,2048,870&width=1920"

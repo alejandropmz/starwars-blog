@@ -25,7 +25,7 @@ export const Species = () => {
                 id={specie.uid}
                 type="species"
                 title={specie.name}
-                text={`specie number ${specie.uid}`}
+                text="A star wars universe specie"
                 img={`https://starwars-visualguide.com/assets/img/species/${specie.uid}.jpg`}
               />
             </div>

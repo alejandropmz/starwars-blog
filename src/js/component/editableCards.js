@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import '../../styles/index.css'
+
 export const EditableCards = (props) => {
   /* props:
   id
@@ -17,8 +19,11 @@ export const EditableCards = (props) => {
         <p className="card-text">
           {props.text}
         </p>
+        <p className="card-text">
+          {props.text2}
+        </p>
         {/* La concatenación de type y id nos genera un enlace entre el componente (type) y su id (id) */}
-        <Link to={`/${props.type}/${props.id}`} className="btn btn-primary">
+        <Link to={`/${props.type}/${props.id}`} className="btn btn-warning">
           More details here
         </Link>
       </div>

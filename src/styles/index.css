@@ -1,3 +1,35 @@
 /* 
-    General Styles
+General Styles
 */
+
+.naved {
+  border: red solid 2px;
+}
+
+#navbarNavDropdown {
+  color: white;
+  /* border: black solid 2px; */
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1593371256584-ac70d0ab43d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBzcGFjZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    color: white;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: rgba(40,39,39,255);
+    border: 1px solid whitesmoke;
+    color: white;
+}
+
+.card-body {
+    border-top: solid 2px yellow;
+}
+
+.interactive-container {
+    color: white;
+}
+
+
+/*mixCards*/
