@@ -32,14 +32,14 @@ export const Interactive = () => {
       text = "THE LASTET | STAR WARS GAMES + APPS"
       />
       <MixCards 
-      img = "https://lumiere-a.akamaihd.net/v1/images/6389015d64cfe900019e57fe-image_f05f3552.jpeg?region=0%2C0%2C1536%2C864&width=768"
-      text = "CAL KESTIS RETURNS IN START WARS JEDI: BATTLE SCARS -"
-      rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
-      rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
-      rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
+        img = "https://lumiere-a.akamaihd.net/v1/images/6389015d64cfe900019e57fe-image_f05f3552.jpeg?region=0%2C0%2C1536%2C864&width=768"
+        text = "CAL KESTIS RETURNS IN START WARS JEDI: BATTLE SCARS -"
+        rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
+        rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
+        rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
       />
       <Link className="d-flex justify-content-center" style={{margin: "60px 0"}} to="*">
         <img style={{width: "1100px", height: "500px"}} src="https://lumiere-a.akamaihd.net/v1/images/vr-hero-desktop_25626109.jpeg?region=0,0,2048,870&width=1536" alt="" />
@@ -48,14 +48,14 @@ export const Interactive = () => {
       text = "THE LASTET | STAR WARS VIRTUAL REALITY"
       />
       <MixCards 
-      img = "https://lumiere-a.akamaihd.net/v1/images/6389015d64cfe900019e57fe-image_f05f3552.jpeg?region=0%2C0%2C1536%2C864&width=768"
-      text = "CAL KESTIS RETURNS IN START WARS JEDI: BATTLE SCARS -"
-      rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
-      rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
-      rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
-      righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
+        img = "https://lumiere-a.akamaihd.net/v1/images/6389015d64cfe900019e57fe-image_f05f3552.jpeg?region=0%2C0%2C1536%2C864&width=768"
+        text = "CAL KESTIS RETURNS IN START WARS JEDI: BATTLE SCARS -"
+        rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
+        rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
+        rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
       />
     </div>
   );

@@ -21,7 +21,9 @@ export const Navbar = () => {
 
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex">
+    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black", color:"white"}}>
+{/*           <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex" style={{backgroundColor:"black"}}>
+ */}
       <div className="container-fluid naved">
  {/*        <Link to="/">
           <img src="https://img.icons8.com/ios/50/000000/star-wars.png"></img>
