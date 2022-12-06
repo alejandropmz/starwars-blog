@@ -19,9 +19,10 @@ export const Navbar = () => {
     { menu: "Blog", url: "*" },
   ]);
 
+
   return (
 
-    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black", color:"white"}}>
+    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black"}}>
 {/*           <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex" style={{backgroundColor:"black"}}>
  */}
       <div className="container-fluid naved">
@@ -50,8 +51,8 @@ export const Navbar = () => {
             ))}
 
             <li className="nav-item dropdown ml-auto">
-              <a
-                className="nav-link dropdown-toggle"
+              <Link
+                className="nav-link dropdown-toggle more-options"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -59,7 +60,7 @@ export const Navbar = () => {
                 aria-expanded="false"
               >
                 More options
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"

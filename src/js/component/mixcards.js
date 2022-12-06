@@ -18,29 +18,29 @@ azul: contenedor izquierda
 */
 export const MixCards = (props) => {
   return (
-    <div className="container d-flex justify-content-center" style={{width:"1050px",  flexWrap:"wrap",  border:"red solid 2px", marginTop:"40px"}}>
-      <div className="left-card" style={{ width: "50%", border:"blue 2px solid", height:"100%"}}>
+    <div className="container d-flex justify-content-center align-items-center container-mixcard">
+      <div className="left-card">
         <img src={props.img} className="card-img-top" alt="..." />
         <div className="card-body">
           <p className="card-text">{props.text}</p>
         </div>
       </div>
-      <div className="right-cards" style={{width:"50%", flexDirection:"column", border:"solid green 2px"}}>
+      <div className="right-cards">
         <div className="card d-flex">
-          <div className="img-card" style={{border:"orange solid 2px", height:"120px"}}> {/* <-- aqui */}
-            <img src={props.rightimg1} style={{height:"50%"}} />
+          <div className="img-card"> {/* <-- aqui */}
+            <img className="img" src={props.rightimg1} />
             {props.righttext1}
           </div>
         </div>
-        <div className="card">
-          <div className="img-card" style={{border:"orange solid 2px", height:"120px"}}> {/* <-- aqui */}
-            <img src={props.rightimg2} style={{height:"50%"}} />
+        <div className="card d-flex">
+          <div className="img-card"> {/* <-- aqui */}
+            <img className="img" src={props.rightimg2} />
             {props.righttext2}
           </div>
         </div>
         <div className="card d-flex">
-          <div className="img-card" style={{border:"orange solid 2px", height:"120px"}}> {/* <-- aqui */}
-            <img src={props.rightimg3} style={{height:"50%"}} />
+          <div className="img-card"> {/* <-- aqui */}
+            <img className="img" src={props.rightimg3} />
             {props.righttext3}
           </div>
         </div>

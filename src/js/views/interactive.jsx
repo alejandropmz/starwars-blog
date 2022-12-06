@@ -37,7 +37,7 @@ export const Interactive = () => {
         rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
         righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
         rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
-        righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
+        righttext2 = "SWCA 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
         rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
         righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
       />
@@ -53,7 +53,7 @@ export const Interactive = () => {
         rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
         righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
         rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
-        righttext2 = "swca 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
+        righttext2 = "SWCA 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
         rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
         righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
       />

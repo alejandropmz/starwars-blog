@@ -1,9 +1,30 @@
 /* 
 General Styles
 */
+* {
+  color: rgb(255, 243, 243);
+}
 
 .naved {
-  border: red solid 2px;
+  border-top: 1px solid #737088;
+}
+
+.nav-item {
+  border-left: 1px solid #737088;
+}
+
+.more-options {
+  border-right: 1px solid #737088;
+}
+
+.dropdown-item {
+  background-color: black;
+  padding: 0;
+  color: gray;
+}
+
+Link:hover {
+  background-color: #737088;
 }
 
 #navbarNavDropdown {
@@ -33,3 +54,34 @@ body {
 
 
 /*mixCards*/
+.container-mixcard {
+  width: 1050px;
+  flex-wrap: wrap;
+  border: red solid 2px;
+  margin-top: 40px
+}
+
+.left-card {
+  width: 50%;
+  border:blue 2px solid;
+  height:100%;
+  background-color: black;
+}
+
+.right-cards {
+  width: 50%;
+  flex-direction: column;
+  border: solid green 2px;
+  margin-top: 20px;
+}
+
+.img-card {
+  border: orange solid 2px;
+  height: 100px
+}
+
+.img {
+  height: 100%;
+  border-right: 2px solid blue;
+}
+
