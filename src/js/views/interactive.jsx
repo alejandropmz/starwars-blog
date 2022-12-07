@@ -48,14 +48,14 @@ export const Interactive = () => {
       text = "THE LASTET | STAR WARS VIRTUAL REALITY"
       />
       <MixCards 
-        img = "https://lumiere-a.akamaihd.net/v1/images/6389015d64cfe900019e57fe-image_f05f3552.jpeg?region=0%2C0%2C1536%2C864&width=768"
-        text = "CAL KESTIS RETURNS IN START WARS JEDI: BATTLE SCARS -"
-        rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/5f89c7a76abe2a0001e13df7-image_c15dc0ab.jpeg?region=0%2C0%2C1536%2C864&width=320"
-        righttext1 = "QUIZ: WHICH STAR WATS VIDEO GAME SHOULD YOU PLAY WIGHT NOW?"
-        rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6293d363297bbb0001820be3-image_89af1546.jpeg?region=0%2C0%2C1536%2C864&width=320"
-        righttext2 = "SWCA 2022: 7 THINGS WE LEARNED GROM THE STAR WARS: HUNTER PANEL"
-        rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
-        righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
+        img = "https://lumiere-a.akamaihd.net/v1/images/6373e3801267060001d13dcc-image_fd2ba163.jpeg?region=0%2C0%2C1536%2C864&width=768"
+        text = "Star Wars: Tales from the Galaxy's Edge - Enhanced Edition Available to Pre-Order Now"
+        rightimg1 = "https://lumiere-a.akamaihd.net/v1/images/62927759297bbb00010f146c-image_7bd960cf.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext1 = "SWCA 2022: 5 Highlights from ILMxLAB's Making of Tales from the Galaxy's Edge Panel"
+        rightimg2 = "https://lumiere-a.akamaihd.net/v1/images/6130cbb81edf660001366b45-image_2533f22b.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext2 = "Star Wars: Tales from the Galaxy's Edge — Last Call Trailer and New Details Revealed"
+        rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/6113cb4a85887d00012abcea-image_6dca1957.jpeg?region=0%2C0%2C1536%2C864&width=320"
+        righttext3 = "Get Ready for “Indiana Jones Meets Star Wars” in Star Wars: Tales from the Galaxy's Edge — Last Call"
       />
     </div>
   );
