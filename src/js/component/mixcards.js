@@ -28,7 +28,7 @@ export const MixCards = (props) => {
       <div className="right-cards">
         <div className="card d-flex">
           <div className="img-card d-flex"> {/* <-- aqui */}
-            <img className="img" src={props.rightimg1} />
+            <img className="img" src={props.rightimg1}/>
             {props.righttext1}
           </div>
         </div>

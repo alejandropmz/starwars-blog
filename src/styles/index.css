@@ -83,5 +83,6 @@ body {
 .img {
   height: 100%;
   border-right: 2px solid rgb(92, 92, 210);
+  margin-right: 15px;
 }
 
