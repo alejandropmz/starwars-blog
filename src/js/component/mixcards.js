@@ -21,7 +21,7 @@ export const MixCards = (props) => {
     <div className="container d-flex space-between align-items-center container-mixcard">
       <div className="left-card">
         <img src={props.img} className="card-img-top" alt="..." />
-        <div className="card-body">
+        <div className="card-body card-body-mix">
           <p className="card-text">{props.text}</p>
         </div>
       </div>

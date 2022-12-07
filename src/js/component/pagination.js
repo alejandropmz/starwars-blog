@@ -19,7 +19,7 @@ export const Pagination = (props) => {
     <nav>
       <ul className="pagination justify-content-center">
         <li className={"page-item"+props.currentPage == 1?" disabled":""}>
-          <a className="page-link">Previous</a>
+          <Link className="page-link">Previous</Link>
         </li>
           {Array(props.pages).fill("").map((val,page)=>(
             <li key={page} className={`page-item${props.currentPage==page+1?" active":""}`}> 

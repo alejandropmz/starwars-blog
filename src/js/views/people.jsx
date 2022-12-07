@@ -20,7 +20,7 @@ export const People = () => {
       <div className="container">
         <div className="row">
           {store.people.map((person, index) => (
-            <div className="col col-md-4">
+            <div className="col col-md-4" key={index}>
               <EditableCards
                 id={person.uid}
                 type="people"
