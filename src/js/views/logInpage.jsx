@@ -3,16 +3,16 @@ import React from "react";
 
 export const LogPage = () => {
   return (
-      <div className="continer d-flex justify-content-center" style={{width:"100%", marginTop:"100px", marginBottom:"100px"}}>
+      <div className="container-form d-flex justify-content-center">
         <form>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
+          <label for="exampleInputEmail1" className="label form-label">
             Email address
           </label>
           <input
             type="email"
             placeholder="Type your star wars email"
-            className="form-control"
+            className="log-form form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             />
@@ -21,13 +21,13 @@ export const LogPage = () => {
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
+          <label for="exampleInputPassword1" className="label form-label">
             Password
           </label>
           <input
             type="password"
             placeholder="Type your star wars password"
-            className="form-control"
+            className="log-form form-control"
             id="exampleInputPassword1"
           />
         </div>
@@ -41,7 +41,7 @@ export const LogPage = () => {
             Check me out
           </label>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-secondary">
           Submit
         </button>
       </form>

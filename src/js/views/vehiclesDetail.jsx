@@ -19,12 +19,12 @@ export const VehiclesDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>Vehicles</h1>
-			<h2>{data.vehicle_class} Vehicle</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.model}</h1>
+      </div>
 			<CardDetail 
 			type = "vehicles"
 			img = {`https://starwars-visualguide.com/assets/img/vehicles/${vehicleid}.jpg`}
-			title = {<h3>{data.model}</h3>}
 			text = {<div>
         <h5>Vehicles features</h5>
           <ul>

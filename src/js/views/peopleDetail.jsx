@@ -19,12 +19,12 @@ export const PeopleDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>People</h1>
-			<h2>{data.name}</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.name}</h1>
+      </div>
 			<CardDetail 
 			type = "people"
 			img = {`https://starwars-visualguide.com/assets/img/characters/${peopleid}.jpg`}
-			title = {<h3>{data.name}</h3>}
 			text = {<div>
         <h5>People features</h5>
           <ul>
@@ -34,6 +34,7 @@ export const PeopleDetail = () => {
             <li>Skin color: {data.skin_color}</li>
             <li>Eye color: {data.eye_color}</li>
             <li>Birth year: {data.birth_year}</li>
+            <li>Mass: {data.mass}</li>
           </ul>
       </div>}
       buttonBack = {`/people`}

@@ -7,6 +7,7 @@ import { useSearchParams } from "react-router-dom";
 import "../../styles/demo.css";
 import { EditableCards } from "../component/editableCards";
 import { Pagination } from "../component/pagination";
+import { FilmsCards } from "../component/filmsCard";
 
 
 
@@ -32,12 +33,13 @@ export const Films = () => {
 
   return (
     <div className="container">
-      <h1>Films</h1>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="tittle-views">Films</h1>
+      </div>
       <div className="container">
-        <div className="row">
         {store.films.map((film,index) => (
-          <div className="col col-md-4" key={index}>
-            <EditableCards
+          <div className="" key={index}>
+            <FilmsCards
             id = {film.uid}
             type  = "films"
             title = {film.properties.title}
@@ -56,7 +58,6 @@ export const Films = () => {
               />
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

@@ -19,8 +19,9 @@ export const StarshipsDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>Starships</h1>
-			<h2>{data.starship_class} Starship</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.model}</h1>
+      </div>
 			<CardDetail 
 			type = "starships"
 			img = {`https://starwars-visualguide.com/assets/img/starships/${starshipid}.jpg`}

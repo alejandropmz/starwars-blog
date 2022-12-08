@@ -14,7 +14,7 @@ export const Pagination = (props) => {
   //El Array(props.pages) obliga a crear un nuevo arreglo con la cantidad de posiciones que haya en props.pages, en este caso 10. Al se un arreglo, se comienza a contabilizar desde 0 por lo que a cada page se le suma 1
 
   return (
-    <nav>
+    <nav className="pagination-nav">
       <ul className="pagination justify-content-center">
         <li className={"bg-black page-item" + props.currentPage == 1 ? " disabled" : ""}>
           <Link
@@ -55,8 +55,8 @@ export const Pagination = (props) => {
           {" "}
           {/* ese props.pages señala a la última página */}
           <Link
-          style={{color:"yellow", border:"none", borderTop:"solid 1px gray", borderBottom:"solid 1px gray"}}
-            className="page-link bg-transparent"
+            style={{color:"yellow", border:"none", borderTop:"solid 1px gray", borderBottom:"solid 1px #737088"}}
+            className="pagination page-link bg-transparent"
             to={
               props.currentPage == props.pages
                 ? "#"

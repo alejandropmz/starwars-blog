@@ -19,12 +19,12 @@ export const SpeciesDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>Species</h1>
-			<h2>{data.classification}</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.name}</h1>
+      </div>
 			<CardDetail 
 			type = "species"
 			img = {`https://starwars-visualguide.com/assets/img/species/${specieid}.jpg`}
-			title = {<h3>{data.name}</h3>}
 			text = {<div>
         <h5>Species features</h5>
           <ul>

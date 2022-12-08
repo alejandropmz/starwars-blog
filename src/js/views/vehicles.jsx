@@ -35,7 +35,9 @@ export const Vehicles = () => {
 
   return (
     <div className="container">
-      <h1>Vehicles</h1>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="tittle-views">Vehicles</h1>
+      </div>
       <small>{records} Vehicles found</small>
       <div className="container">
         <div className="row">

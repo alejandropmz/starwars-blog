@@ -3,6 +3,36 @@
   color: rgb(214, 212, 212);
 }
 
+.tittle-views {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 5px 0;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px #737088 solid;
+  border-left: none;
+  border-right: none;
+}
+
+.sub-tittle-views {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 40px 0;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px yellow solid;
+  border-left: none;
+  border-right: none;
+}
+
+.tittle {
+  margin: 20px 0;
+  padding: 5px;
+}
+
+
 /*Navbar*/
 .nav-color {
   background-color: #282727;
@@ -51,7 +81,37 @@ body {
     color: white;
 }
 
+/*FilmCards*/
 
+.film-card-container {
+  margin: auto;
+  border-radius: 20px;
+  width: 1200px;
+  height: 350px;
+  margin-bottom: 40px;
+}
+
+.film-text {
+  width: 70%;
+  background: #282727;
+  padding: 20px;
+  text-align: left;
+}
+
+.film-img {
+  width: 30%;
+  border-left: 3px solid yellow;
+}
+
+.film-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+.small-text {
+  vertical-align: end;
+  color: yellow;
+}
 
 /*Cards*/
 
@@ -156,6 +216,37 @@ body {
 .link-margin {
   margin: 60px 0;
 }
+
+/*Login page*/
+
+.container-form {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.label {
+  color: yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.log-form {
+  background: transparent;
+  padding: 8px;
+}
+
+/*Pagination*/
+
+
+.pagination {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background: transparent;
+}
+
+.pagination-nav {
+  margin-top: 40px;
+}
+
 
 
 /*Footer*/

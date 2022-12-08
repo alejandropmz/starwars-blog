@@ -34,7 +34,9 @@ export const Species = () => {
 
   return (
     <div className="container">
-      <h1>Species</h1>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="tittle-views">Species</h1>
+      </div>
       <div className="container">
         <div className="row">
           {store.species.map((specie) => (

@@ -21,15 +21,16 @@ export const PlanetsDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>Planets</h1>
-			<h2>{data.name} Planet</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.name}</h1>
+      </div>
 			<CardDetail 
 			type = "planets"
 			img = {`https://starwars-visualguide.com/assets/img/planets/${planetid}.jpg`}
-			title = {<h3>{data.name}</h3>}
 			text = {<div>
         <h5>Properties planet</h5>
           <ul>
+          <li>Name: {data.name}</li>
           <li>Diameter: {data.diameter}</li>
           <li>Gravity: {data.gravity}</li>
           <li>Population: {data.population}</li>

@@ -19,19 +19,20 @@ export const FilmsDetail = () => {
 
 	return (
 		<div className="container">
-			<h1>Films</h1>
-			<h2>{data.title} Film</h2>
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="sub-tittle-views">{data.title} Film</h1>
+      </div>
 			<CardDetail 
-			type = "planets"
+			type = "films"
 			img = {`https://starwars-visualguide.com/assets/img/films/${filmid}.jpg`}
-			title = {<h3>{data.title}</h3>}
 			text = {<div>
-        <h5>Properties Films</h5>
+        <h5>Properties Film</h5>
           <ul>
             <li>Producer: {data.producer}</li>
             <li>Director: {data.director}</li>
             <li>Title: {data.title}</li>
             <li>Release date: {data.release_date}</li>
+            <li>Episode id: {data.episode_id}</li>
           </ul>
       </div>}
       buttonBack = {`/films`}

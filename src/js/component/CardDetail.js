@@ -11,8 +11,6 @@ smallText
 buttonInfo
 buttonBack
 textbuttonBack
-buttonInfo
-textbuttonInfo
 */
 
 export const CardDetail = (props) => {
@@ -28,8 +26,7 @@ export const CardDetail = (props) => {
           <p className="card-text">{props.text}</p>
           <p className="card-text">{props.text2}</p>
           <p className="card-text"><small className="text-muted">{props.smallText}</small></p>
-          <div className="d-flex justify-content-between">
-            <Link to={props.buttonInfo} className="btn btn-warning">{props.textButtonInfo}</Link>
+          <div className="d-flex justify-content-end">
             <Link to={props.buttonBack} className="btn btn-light">{props.textButtonBack}</Link>
           </div>
         </div>

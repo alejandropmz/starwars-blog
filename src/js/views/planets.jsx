@@ -44,6 +44,9 @@ export const Planets = () => {
   return (
     <div className="container">
       {/* <h1>Planets {JSON.stringify(searchParams.get("page"))} </h1> */}
+      <div className="tittle d-flex justify-content-center">
+        <h1 className="tittle-views">Planets</h1>
+      </div>
       <small>founded {records} planets</small>
       {/* no me está funcionando de manera correcta */}
       <div className="container">
