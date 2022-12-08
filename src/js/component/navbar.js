@@ -43,7 +43,7 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown"> 
           <ul className="navbar-nav">
             {links.map((link, index) => (
-              <li key={index} className="nav-item">
+              <li key={index} className="nav-item" style={{padding:"10px"}}>
                 <Link className="nav-link" to={link.link}>
                   {link.text}
                 </Link>
@@ -67,7 +67,7 @@ export const Navbar = () => {
               >
                 {menu.map((menu, index) => (
                   <li key={index}>
-                    <Link className="dropdown-item" to={menu.url}>
+                    <Link style={{padding:"10px"}} className="dropdown-item d-flex justify-content-center" to={menu.url}>
                       {menu.menu}
                     </Link>
                   </li>

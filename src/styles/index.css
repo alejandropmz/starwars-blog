@@ -53,6 +53,23 @@ body {
   color: white;
 }
 
+/*CardDetail*/
+
+.card-detail {
+  max-width: 800px;
+  max-height: 400px;
+  margin-top: 20px;
+  margin: auto;
+}
+.card-body-right {
+  border-top: none;
+  margin: auto;
+}
+
+.card-body-left {
+  border-right: 2px solid yellow;
+}
+
 
 /*mixCards*/
 .container-mixcard {
@@ -91,3 +108,8 @@ body {
   margin-right: 15px;
 }
 
+/*Footer*/
+
+footer .nav-item {
+  border: none;
+}

@@ -12,6 +12,11 @@ import { Vehicles } from "./views/vehicles.jsx";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { PlanetsDetail } from "./views/planetsDetail.jsx";
+import { FilmsDetail } from "./views/filmsDetail.jsx";
+import { PeopleDetail } from "./views/peopleDetail.jsx";
+import { SpeciesDetail } from "./views/speciesDetail.jsx";
+import { StarshipsDetail } from "./views/starshipsDetail.jsx";
+import { VehiclesDetail } from "./views/vehiclesDetail.jsx";
 import { LogPage } from "./views/logInpage.jsx";
 import { Interactive } from "./views/interactive.jsx";
 
@@ -32,16 +37,21 @@ const Layout = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/films" element={<Films />} />
+            <Route path="/films/:filmid" element={<FilmsDetail />} />
             <Route path="/people" element={<People />} />
+            <Route path="/people/:peopleid" element={<PeopleDetail />} />
             <Route path="/planets" element={<Planets />} />
             <Route path="/planets/:planetid" element={<PlanetsDetail />} />
             <Route path="/species" element={<Species />} />
+            <Route path="/species/:specieid" element={<SpeciesDetail />} />
             <Route path="/starships" element={<Starships />} />
+            <Route path="/starships/:starshipid" element={<StarshipsDetail />} />
             <Route path="/vehicles" element={<Vehicles />} />
+            <Route path="/vehicles/:vehicleid" element={<VehiclesDetail />} />
             <Route path="/single/:theid" element={<Single />} />
             <Route path="/logInpage" element={<LogPage />} />
             <Route path="/interactive" element={<Interactive />} />
-            <Route path="*" element={<h1>Page in progress please calm down</h1>} />
+            <Route path="*" element={<h1>Page in progress</h1>} />
           </Routes>
           <Footer />
         </ScrollToTop>
