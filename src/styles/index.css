@@ -1,21 +1,33 @@
-/* 
-General Styles
-*/
+/* General Styles */
 * {
-  color: rgb(255, 243, 243);
+  color: rgb(214, 212, 212);
 }
 
-.naved {
+/*Navbar*/
+.nav-color {
+  background-color: #282727;
+/*   border: 1px solid rgb(151, 149, 149);
+  border-left: none;
+  border-right: none;
+  border-bottom: none; */
+}
+
+/* .naved {
   border-top: 1px solid #737088;
 }
+*/
 
 .nav-item {
   border-left: 1px solid #737088;
 }
 
+.nav-item-dropdown {
+  padding-top: 10px;
+}
+
 .more-options {
   border-right: 1px solid #737088;
-}
+} 
 
 .dropdown-item {
   background-color: black;
@@ -32,10 +44,16 @@ Link:hover {
   /* border: black solid 2px; */
 }
 
+/*Body*/
+
 body {
     background-image: url("https://images.unsplash.com/photo-1593371256584-ac70d0ab43d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBzcGFjZXxlbnwwfHwwfHw%3D&w=1000&q=80");
     color: white;
 }
+
+
+
+/*Cards*/
 
 .card {
     margin-bottom: 20px;
@@ -44,14 +62,16 @@ body {
     color: white;
 }
 
+.card-films {
+  width: 100%;
+  border: 2px solid red;
+}
+
 .card-body {
     border-top: solid 2px yellow;
 }
 
 
-.interactive-container {
-  color: white;
-}
 
 /*CardDetail*/
 
@@ -80,12 +100,12 @@ body {
 }
 
 .card-body-mix {
-    border-top: solid 2px rgb(92, 92, 210);
+  border-top: solid 2px rgb(92, 92, 210);
 }
 
 .left-card {
   width: 50%;
-/*   border:blue 2px solid; */
+  /*   border:blue 2px solid; */
   height:100%;
   background-color: black;
 }
@@ -93,12 +113,12 @@ body {
 .right-cards {
   width: 50%;
   flex-direction: column;
-/*   border: solid red 2px; */
+  /*   border: solid red 2px; */
   margin-top: 20px;
 }
 
 .img-card {
-/*   border: orange solid 2px; */
+  /*   border: orange solid 2px; */
   height: 100px
 }
 
@@ -107,6 +127,36 @@ body {
   border-right: 2px solid rgb(92, 92, 210);
   margin-right: 15px;
 }
+
+.link-img {
+  width: 1100px;
+  height: 500px;
+}
+
+/*topBar*/
+
+.topbar {
+  border: solid 1px gray;
+  border-left: none;
+  border-right: none;
+  height: 60px;
+  width: 1050px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+
+
+/*Interactive*/
+
+.interactive-container {
+  color: white;
+}
+
+.link-margin {
+  margin: 60px 0;
+}
+
 
 /*Footer*/
 

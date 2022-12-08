@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom"; // Este hook nos permite capturar los parametros que se pasan a la url
+import { useSearchParams } from "react-router-dom";
 
 import { Context } from "../store/appContext";
 
@@ -16,6 +17,7 @@ export const PlanetsDetail = () => {
     .getAllDetails("planets", planetid) //se ejecuta la función del flux la cual trae la información de los parametros vinculados aquí
     .then(reply=>SetData(reply)) // espera que se cumpla la promesa y luego guarda la data dentro del estado useState
   },[])
+  
 
 	return (
 		<div className="container">

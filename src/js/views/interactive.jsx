@@ -20,8 +20,8 @@ export const Interactive = () => {
         img1 = "https://lumiere-a.akamaihd.net/v1/images/sw-lego-new-swcom-slide-desktop-_2_5f19744d.jpeg?region=0,0,2048,870&width=1920"
         img2 = "https://lumiere-a.akamaihd.net/v1/images/sw-tales-from-galaxy-s-edge-enhanced-new-swcom-slide-de_9779cc92.jpeg?region=0,0,2048,870&width=1920"
       />
-      <Link className="d-flex justify-content-center" style={{margin: "60px 0"}} to="*">
-        <img style={{width: "1100px", height: "500px"}} src="https://lumiere-a.akamaihd.net/v1/images/new-swcom-slide-desktop_games_021d34b6.jpeg?region=0,0,2048,870&width=1536" alt="" />
+      <Link className="link-margin d-flex justify-content-center" to="*">
+        <img className="link-img" src="https://lumiere-a.akamaihd.net/v1/images/new-swcom-slide-desktop_games_021d34b6.jpeg?region=0,0,2048,870&width=1536" alt="" />
       </Link>
       <MiddleInfo 
       title = "GAMES + APPS"
@@ -41,8 +41,8 @@ export const Interactive = () => {
         rightimg3 = "https://lumiere-a.akamaihd.net/v1/images/62915a96297bbb0001b03703-image_581c409a.jpeg?region=0%2C0%2C1536%2C864&width=320"
         righttext3 = "SWCA 2022: STAR WARS: KNIGHTS OF THE OLD REPUBLIC II: THE SITH LOTDS COMING TO NINTENDO SWITCH"
       />
-      <Link className="d-flex justify-content-center" style={{margin: "60px 0"}} to="*">
-        <img style={{width: "1100px", height: "500px"}} src="https://lumiere-a.akamaihd.net/v1/images/vr-hero-desktop_25626109.jpeg?region=0,0,2048,870&width=1536" alt="" />
+      <Link className="link-margin d-flex justify-content-center" to="*">
+        <img className="link-img" src="https://lumiere-a.akamaihd.net/v1/images/vr-hero-desktop_25626109.jpeg?region=0,0,2048,870&width=1536" alt="" />
       </Link>
       <TopBar 
       text = "THE LASTET | STAR WARS VIRTUAL REALITY"

@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom"; // Este hook nos permite capturar los parametros que se pasan a la url
 
 import { Context } from "../store/appContext";
-import "../../styles/index.css";
 
+import "../../styles/index.css";
 import { CardDetail } from "../component/CardDetail";
 
 export const StarshipsDetail = () => {
@@ -13,14 +13,14 @@ export const StarshipsDetail = () => {
 
   useEffect(()=>{
     actions
-    .getAllDetails("starships", starshipid)
-    .then(reply=>SetData(reply))
+    .getAllDetails("starship", starshipid) //se ejecuta la función del flux la cual trae la información de los parametros vinculados aquí
+    .then(reply=>SetData(reply)) // espera que se cumpla la promesa y luego guarda la data dentro del estado useState
   },[])
 
 	return (
 		<div className="container">
 			<h1>Starships</h1>
-			<h2>{data.starship_class}</h2>
+			<h2>{data.starship_class} Starship</h2>
 			<CardDetail 
 			type = "starships"
 			img = {`https://starwars-visualguide.com/assets/img/starships/${starshipid}.jpg`}
@@ -28,16 +28,17 @@ export const StarshipsDetail = () => {
 			text = {<div>
         <h5>Starships features</h5>
           <ul>
+            <li>Model: {data.model}</li>
             <li>Manufacturer: {data.manufacturer}</li>
-            <li>Cost: {data.cost_in_credits}</li>
-            <li>Lenght colors: {data.lenght}</li>
-            <li>Passengers: {data.passengers}</li>
-            <li>Crew: {data.crew}</li>
+            <li>Length: {data.length}</li>
+            <li>Cargo capacity: {data.cargo_capacity}</li>
+            <li>Consumables: {data.consumables}</li>
+            <li>Max atmosphering speed: {data.max_atmosphering_speed}</li>
           </ul>
       </div>}
       buttonBack = {`/starships`}
 			textButtonBack = "Back"
-      buttonInfo = {`/starships/${starshipid}`}
+      buttonInfo = {data.url}
 			textButtonInfo = "More details here"
 			/>
 		</div>

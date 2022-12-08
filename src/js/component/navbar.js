@@ -19,14 +19,15 @@ export const Navbar = () => {
     { menu: "Blog", url: "*" },
   ]);
 
-
   return (
-
-    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black", marginBottom:"20px"}}>
-{/*           <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex" style={{backgroundColor:"black"}}>
- */}
+    <nav
+      className="nav-color navbar navbar-expand-lg d-flex navbar-dark"
+      style={{ marginBottom: "20px" }}
+    >
+      {/*           <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex" style={{backgroundColor:"black"}}>
+       */}
       <div className="container-fluid naved">
- {/*        <Link to="/">
+        {/*        <Link to="/">
           <img src="https://img.icons8.com/ios/50/000000/star-wars.png"></img>
         </Link> */}
         <button
@@ -40,24 +41,26 @@ export const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown"> 
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
           <ul className="navbar-nav">
             {links.map((link, index) => (
-              <li key={index} className="nav-item" style={{padding:"10px"}}>
+              <li key={index} className="nav-item" style={{ padding: "10px" }}>
                 <Link className="nav-link" to={link.link}>
                   {link.text}
                 </Link>
               </li>
             ))}
 
-            <li className="nav-item dropdown ml-auto">
+            <li className="nav-item-dropdown nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle more-options"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 More options
               </Link>
@@ -67,7 +70,11 @@ export const Navbar = () => {
               >
                 {menu.map((menu, index) => (
                   <li key={index}>
-                    <Link style={{padding:"10px"}} className="dropdown-item d-flex justify-content-center" to={menu.url}>
+                    <Link
+                      style={{ padding: "10px" }}
+                      className="dropdown-item d-flex justify-content-center"
+                      to={menu.url}
+                    >
                       {menu.menu}
                     </Link>
                   </li>

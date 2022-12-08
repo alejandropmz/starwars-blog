@@ -43,7 +43,7 @@ export const Planets = () => {
 
   return (
     <div className="container">
-      <h1>Planets {JSON.stringify(searchParams.get("page"))} </h1>{" "}
+      {/* <h1>Planets {JSON.stringify(searchParams.get("page"))} </h1> */}
       <small>founded {records} planets</small>
       {/* no me está funcionando de manera correcta */}
       <div className="container">

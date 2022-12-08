@@ -15,8 +15,8 @@ import { PlanetsDetail } from "./views/planetsDetail.jsx";
 import { FilmsDetail } from "./views/filmsDetail.jsx";
 import { PeopleDetail } from "./views/peopleDetail.jsx";
 import { SpeciesDetail } from "./views/speciesDetail.jsx";
-import { StarshipsDetail } from "./views/starshipsDetail.jsx";
 import { VehiclesDetail } from "./views/vehiclesDetail.jsx";
+import { StarshipsDetail } from "./views/starshipDetail.jsx";
 import { LogPage } from "./views/logInpage.jsx";
 import { Interactive } from "./views/interactive.jsx";
 
