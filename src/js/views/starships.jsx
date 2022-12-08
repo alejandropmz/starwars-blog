@@ -37,6 +37,9 @@ export const Starships = () => {
       <div className="tittle d-flex justify-content-center">
         <h1 className="tittle-views">Starships</h1>
       </div>
+      <div className="small-counter">
+        <small>{records} Starships found</small>
+      </div>
       <div className="container">
         <div className="row">
           {store.starships.map((starship) => (

@@ -4,6 +4,7 @@
 }
 
 .tittle-views {
+  color: #b0aebc;
   display: flex;
   justify-content: center;
   width: 40%;
@@ -16,6 +17,7 @@
 }
 
 .sub-tittle-views {
+  color: #b0aebc;
   display: flex;
   justify-content: center;
   width: 40%;
@@ -147,7 +149,7 @@ body {
 }
 
 .card-body-left {
-  border-right: 2px solid yellow;
+  border-right: 3px solid yellow;
 }
 
 
@@ -203,6 +205,18 @@ body {
   width: 1050px;
   margin: auto;
   vertical-align: middle;
+}
+
+/*views*/
+
+.small-counter {
+    width: 10%;
+    margin: 30px 15px;
+    border: 1px solid rgb(161, 161, 82);
+    border-left: none;
+    border-right: none;
+/*     border-bottom:none; */
+    padding: 5px;
 }
 
 

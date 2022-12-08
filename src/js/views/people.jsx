@@ -37,6 +37,9 @@ export const People = () => {
       <div className="tittle d-flex justify-content-center">
         <h1 className="tittle-views">People</h1>
       </div>
+      <div className="small-counter">
+        <small>{records} People found</small>
+      </div>
       <div className="container">
         <div className="row">
           {store.people.map((person, index) => (

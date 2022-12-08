@@ -25,9 +25,8 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
         let data = await reply.json() // espera que se convierta la respuesta en un objeto javascript
         let newStore = {...getStore()} // deconstrúye el store y lo guarda en una nueva variable
-        newStore[resource] = data.result || data.results //esto es lo mismo que hacer store.planets (por ejemplo), pero al hacerlo así se puede mapear los valores e ir pasando cada componente en el parametro resource
-        // toda la info de getStore se suplanta con la data de cada elemento (los cuales se están pasando por el parametro resouce), ej, planets, starships etc
-        // 
+        newStore[resource] = data.result || data.results //esto es lo mismo que hacer store.planets (por ejemplo), es decir en el deconstruido de newStore busca el elemento específico con el que se desee trabajar (planets, starships etc)
+        // toda la info de getStore se suplanta con la data de cada elemento (los cuales se están pasando por el parametro resource), ej, planets, starships etc
         setStore(newStore)
         return {
           records: data.total_records || null,
@@ -46,7 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
       }
 		} //acción es lo que se hace con esa data
-	}; // En este caso es hacer un una petición a la api de star wars donde se le haga un set a ese estado deconstruyendolo y anexando la data de planets.results 
+	}; // En este caso es hacer un una petición a la api de star wars donde se le haga un set a ese estado deconstruyendolo y anexando la data de [elements].results 
 };
 
 export default getState;

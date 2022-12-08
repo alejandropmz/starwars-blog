@@ -38,7 +38,9 @@ export const Vehicles = () => {
       <div className="tittle d-flex justify-content-center">
         <h1 className="tittle-views">Vehicles</h1>
       </div>
-      <small>{records} Vehicles found</small>
+      <div className="small-counter">
+       <small>{records} Vehicles found</small>
+      </div>
       <div className="container">
         <div className="row">
           {store.vehicles.map((vehicle) => (
