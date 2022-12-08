@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   return (
 
-    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black"}}>
+    <nav className="navbar navbar-expand-lg d-flex navbar-dark" style={{backgroundColor:"black", marginBottom:"20px"}}>
 {/*           <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex" style={{backgroundColor:"black"}}>
  */}
       <div className="container-fluid naved">

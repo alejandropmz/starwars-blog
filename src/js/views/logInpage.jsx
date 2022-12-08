@@ -3,7 +3,7 @@ import React from "react";
 
 export const LogPage = () => {
   return (
-      <div className="continer">
+      <div className="continer d-flex justify-content-center" style={{width:"100%", marginTop:"100px", marginBottom:"100px"}}>
         <form>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">
@@ -11,10 +11,11 @@ export const LogPage = () => {
           </label>
           <input
             type="email"
+            placeholder="Type your star wars email"
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
-          />
+            />
           <div id="emailHelp" className="form-text">
             We'll never share your email with anyone else.
           </div>
@@ -25,6 +26,7 @@ export const LogPage = () => {
           </label>
           <input
             type="password"
+            placeholder="Type your star wars password"
             className="form-control"
             id="exampleInputPassword1"
           />
