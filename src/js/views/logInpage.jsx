@@ -6,7 +6,7 @@ export const LogPage = () => {
       <div className="container-form d-flex justify-content-center">
         <form>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="label form-label">
+          <label htmlFor="exampleInputEmail1" className="label form-label">
             Email address
           </label>
           <input
@@ -21,7 +21,7 @@ export const LogPage = () => {
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="label form-label">
+          <label htmlFor="exampleInputPassword1" className="label form-label">
             Password
           </label>
           <input
@@ -37,7 +37,7 @@ export const LogPage = () => {
             className="form-check-input"
             id="exampleCheck1"
           />
-          <label className="form-check-label" for="exampleCheck1">
+          <label className="form-check-label" htmlFor="exampleCheck1">
             Check me out
           </label>
         </div>

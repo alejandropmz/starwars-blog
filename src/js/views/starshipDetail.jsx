@@ -13,7 +13,7 @@ export const StarshipsDetail = () => {
 
   useEffect(()=>{
     actions
-    .getAllDetails("starship", starshipid) //se ejecuta la función del flux la cual trae la información de los parametros vinculados aquí
+    .getAllDetails("starships", starshipid) //se ejecuta la función del flux la cual trae la información de los parametros vinculados aquí
     .then(reply=>SetData(reply)) // espera que se cumpla la promesa y luego guarda la data dentro del estado useState
   },[])
 

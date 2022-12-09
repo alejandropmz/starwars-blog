@@ -207,6 +207,10 @@ body {
   vertical-align: middle;
 }
 
+.topbar-text {
+  color: #b0aebc;
+}
+
 /*views*/
 
 .small-counter {
