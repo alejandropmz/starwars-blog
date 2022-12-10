@@ -15,7 +15,7 @@ export const VehiclesDetail = () => {
     actions
     .getAllDetails("vehicles", vehicleid) //se ejecuta la función del flux la cual trae la información de los parametros vinculados aquí
     .then(reply=>SetData(reply)) // espera que se cumpla la promesa y luego guarda la data dentro del estado useState
-  },[])
+  },[vehicleid])
 
 	return (
 		<div className="container">

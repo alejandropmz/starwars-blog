@@ -15,7 +15,7 @@ export const SpeciesDetail = () => {
     actions
     .getAllDetails("species", specieid)
     .then(reply=>SetData(reply))
-  },[])
+  },[specieid])
 
 	return (
 		<div className="container">

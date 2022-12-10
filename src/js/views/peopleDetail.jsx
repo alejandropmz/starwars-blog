@@ -15,7 +15,7 @@ export const PeopleDetail = () => {
     actions
     .getAllDetails("people", peopleid)
     .then(reply=>SetData(reply))
-  },[])
+  },[peopleid])
 
 	return (
 		<div className="container">

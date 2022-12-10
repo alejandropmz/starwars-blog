@@ -15,7 +15,7 @@ export const FilmsDetail = () => {
     actions
     .getAllDetails("films", filmid)
     .then(reply=>SetData(reply))
-  },[])
+  },[filmid])
 
 	return (
 		<div className="container">
