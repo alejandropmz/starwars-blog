@@ -7,7 +7,8 @@ const getState = ({ getStore, getActions, setStore }) => {
       people:[],
       starships:[],
       species:[],
-      vehicles:[]
+      vehicles:[],
+      favorites:[]
 		}, //store es donde se guarda la data
 		actions: {
       getAllElements: async (resource, pagination = {}) => {
@@ -43,7 +44,32 @@ const getState = ({ getStore, getActions, setStore }) => {
         return { //en este caso a diferencia del primer actions get (que guardamos la información en un store) en este caso solo la vamos a retornar más no a guardar en un store, en este caso solo trae lo que está dentro de properties
           ...data.result.properties
         }
-      }
+      },
+      /* addFavorites: (add) => {
+        
+      },
+      deleteFavorites: (remove) => {
+        
+      }, */
+      changeFavorite: (data) => { //La data que se captura en el evento se pasa a la función changeFavorites en el componente
+        let foundIndex = getStore().favorites.findIndex(
+          index=>index.link==data.link
+          )
+        if (foundIndex == -1){
+          setStore({ //Actualizamos el store con la deconstrucción del este, y actualizamos los favoritos con los favoritos más el elemento que se agrega
+            ...getStore(), //se deconstruye el store
+            favorites: [...getStore().favorites, data] // el arreglo favorite se va a llenar con el store ACTUAL deconstruido más el elemento que se agrega en el parametro de la funcion 
+          })
+        } else {
+          let newFavorites = [...getStore().favorites] // se crea un arreglo donde se mete toda la info que se encuentra en el store de favorites
+          newFavorites.splice(foundIndex,1) // en este caso se usa el splice para que ignore el valor qu ese le pasa en el parametro remove
+          setStore({
+            ...getStore(),
+            favorites:newFavorites
+            //se deconstruye el store y el arreglo de favorites se iguala al la info de newFavorite
+          })
+          }
+        }
 		} //acción es lo que se hace con esa data
 	}; // En este caso es hacer un una petición a la api de star wars donde se le haga un set a ese estado deconstruyendolo y anexando la data de [elements].results 
 };

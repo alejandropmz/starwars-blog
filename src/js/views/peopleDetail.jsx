@@ -37,7 +37,6 @@ export const PeopleDetail = () => {
             <li>Mass: {data.mass}</li>
           </ul>
       </div>}
-      buttonBack = {`/people`}
 			textButtonBack = "Back"
       buttonInfo = {`/people/${peopleid}`}
 			textButtonInfo = "More details here"

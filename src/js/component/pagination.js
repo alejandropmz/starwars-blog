@@ -34,7 +34,7 @@ export const Pagination = (props) => {
           .map((val, page) => (
             <li
               key={page}
-              className={`bg-black page-item${
+              className={`bg-transparent page-item${
                 props.currentPage == page + 1 ? " active" : ""
               }`}
             >

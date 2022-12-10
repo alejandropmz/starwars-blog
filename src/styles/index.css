@@ -53,9 +53,16 @@
   border-left: 1px solid #737088;
 }
 
+.nav-link:hover {
+  padding: 0;
+  color: #ffc107;
+  font-size: 22px;
+}
+
 .nav-item-dropdown {
   padding-top: 10px;
 }
+
 
 .more-options {
   border-right: 1px solid #737088;
@@ -66,10 +73,10 @@
   padding: 0;
   color: gray;
 }
-
-Link:hover {
-  background-color: #737088;
+.dropdown-item:hover {
+  background-color: #ffc107;
 }
+
 
 #navbarNavDropdown {
   color: white;
@@ -89,7 +96,7 @@ body {
   margin: auto;
   border-radius: 20px;
   width: 1200px;
-  height: 350px;
+  height: 400px;
   margin-bottom: 40px;
 }
 
@@ -195,6 +202,18 @@ body {
   height: 500px;
 }
 
+/*icons*/
+
+.icons {
+  font-size: 35px;
+  color: #b0aebc;
+  cursor: pointer;
+}
+
+.icons:hover {
+  color: #ffc107;
+}
+
 /*topBar*/
 
 .topbar {
@@ -263,6 +282,11 @@ body {
 
 .pagination-nav {
   margin-top: 40px;
+}
+
+.pagination-number:hover {
+  color: #b0aebc;
+  background: #ffc107;
 }
 
 

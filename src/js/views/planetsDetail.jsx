@@ -38,7 +38,6 @@ export const PlanetsDetail = () => {
           <li>Climate: {data.climate}</li>
           </ul>
       </div>}
-      buttonBack = {`/planets/`}
 			textButtonBack = "Back"
       buttonInfo = {`https://www.swapi.tech/api/planets/${planetid}`}
 			textButtonInfo = "More details here"

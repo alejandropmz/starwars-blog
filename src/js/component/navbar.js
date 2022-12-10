@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/index.css";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+
+  const {store, actions} = useContext(Context); // importamos el context para poder usar los estados para los favoritos
+
   const [links, setLinks] = useState([
     { text: "Home", link: "/" },
     { text: "Films", link: "/films" },
@@ -47,7 +51,7 @@ export const Navbar = () => {
         >
           <ul className="navbar-nav">
             {links.map((link, index) => (
-              <li key={index} className="nav-item" style={{ padding: "10px" }}>
+              <li key={index} className="nav-text nav-item" style={{ padding: "10px" }}>
                 <Link className="nav-link" to={link.link}>
                   {link.text}
                 </Link>
@@ -57,7 +61,7 @@ export const Navbar = () => {
             <li className="nav-item-dropdown nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle more-options"
-                href="#"
+                style={{borderRight:"none"}}
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -78,6 +82,34 @@ export const Navbar = () => {
                       {menu.menu}
                     </Link>
                   </li>
+                ))}
+              </ul>
+            </li>
+            <li className="nav-item-dropdown nav-item dropdown justify-content-end">
+              <Link
+                className="nav-link dropdown-toggle more-options"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Favorites
+              </Link>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                {store.favorites.map((favorite, index)=>(
+                  <li key={index}>
+                  <Link
+                    style={{ padding: "10px" }}
+                    className="dropdown-item d-flex justify-content-between"
+                    to={favorite.link}
+                  >
+                    {favorite.img}
+                    {favorite.name}
+                  </Link>
+                </li>
                 ))}
               </ul>
             </li>
