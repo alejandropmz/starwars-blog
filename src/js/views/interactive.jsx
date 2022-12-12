@@ -19,7 +19,7 @@ export const Interactive = () => {
       <Carousel 
         img1 = "https://lumiere-a.akamaihd.net/v1/images/sw-lego-new-swcom-slide-desktop-_2_5f19744d.jpeg?region=0,0,2048,870&width=1920"
         img2 = "https://lumiere-a.akamaihd.net/v1/images/sw-tales-from-galaxy-s-edge-enhanced-new-swcom-slide-de_9779cc92.jpeg?region=0,0,2048,870&width=1920"
-      />
+        />
       <Link className="link-margin d-flex justify-content-center" to="*">
         <img className="link-img" src="https://lumiere-a.akamaihd.net/v1/images/new-swcom-slide-desktop_games_021d34b6.jpeg?region=0,0,2048,870&width=1536" alt="" />
       </Link>
