@@ -5,7 +5,7 @@ import { FilmsCards } from "../component/filmsCard";
 export const Home = () => (
   <div className="text-center mt-5">
       <div className="tittle d-flex justify-content-center">
-        <h1 className="sub-tittle-views">Star Wars blog in pregress</h1>
+        <h1 className="sub-tittle-views"> Welcome to Star Wars blog</h1>
       </div>
     <p>
       <img
