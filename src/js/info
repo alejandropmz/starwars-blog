@@ -1,5 +1,7 @@
 La función del index es cargar el layout
 
+cambio
+
 React Router actúa en el layout, el cual es el que se conecta al componente index para mostrar
 la aplicación.
 
